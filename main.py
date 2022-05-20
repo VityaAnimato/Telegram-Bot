@@ -20,8 +20,9 @@ def values(m, res=False):
 
 @bot.message_handler(commands=["calc"])
 def calc(m, res=False):
-    bot.send_message(m.chat.id, 'pass')
-    bot.send_message(m.chat.id, 'pass')
+    # принять данные от пользователя
+    bot.send_message(m.chat.id, 'get_prices(base, quote, amount)')
+    # предложить посчитать еще раз
 
 
     
